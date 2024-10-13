@@ -2,3 +2,4 @@ matplotlib
 scipy
 sympy
 networkx
+typing
