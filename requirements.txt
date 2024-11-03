@@ -4,3 +4,4 @@ sympy
 networkx
 typing
 pennylane
+pandas
