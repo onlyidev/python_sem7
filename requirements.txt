@@ -5,3 +5,4 @@ networkx
 typing
 pennylane
 pandas
+qiskit
