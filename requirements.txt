@@ -6,3 +6,4 @@ typing
 pennylane
 pandas
 qiskit
+pylatexenc
