@@ -7,3 +7,4 @@ pennylane
 pandas
 qiskit
 pylatexenc
+tweedledum

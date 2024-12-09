@@ -1,5 +1,6 @@
 # %%
 import sympy as sp
+import numpy as np
 from sympy.physics.quantum import TensorProduct
 i = sp.I
 
@@ -85,3 +86,14 @@ def Uf():
     XCC = op1@op2@Q.CCNOT@op2@op1
     state4 = state3 * swap23(TensorProduct(XCC, Q.I))
     return state4
+# %% 
+def M_a(a, N):
+    dim = 2 ** (int(np.log2(N)) + 1) 
+    M = np.zeros((dim,dim), dtype=int)
+
+    for x in range(N):
+        xp = (a*x) % N
+        M[xp,x] = 1
+    for x in range(N, dim):
+        M[x,x] = 1
+    return sp.Matrix(M.reshape(dim, dim))
